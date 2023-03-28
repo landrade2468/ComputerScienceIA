@@ -85,11 +85,11 @@ public class PairTuteeForm extends JFrame {
                         if (sumOfCategories > 0) { //Fix max method, so it actually gets the tutor with the most common categories
                             max = sumOfCategories;
                             tutorName = tutor.getName();
-                            tuteeNamePartOfPair = "Tutee Name: " + tuteeName;
-                            tuteeContactPartOfPair = "Tutee Contact Information: " + tuteeEmailAddress;
-                            tutorNamePartOfPair = "Tutor Name: " + tutorName;
-                            tutorContactPartOfPair = "Tutor Contact Information: " + tutor.getEmailAddress();
-                            commonCategoriesBetweenThePairs = "Common Categories: " + tutor.getCommonCategories(); //Fix so it only prints the common category once
+                            tuteeNamePartOfPair = tuteeName;
+                            tuteeContactPartOfPair = tuteeEmailAddress;
+                            tutorNamePartOfPair = tutorName;
+                            tutorContactPartOfPair = tutor.getEmailAddress();
+                            commonCategoriesBetweenThePairs = tutor.getCommonCategories();
                         }
                     }
                     foundPerfectTutor = true;
