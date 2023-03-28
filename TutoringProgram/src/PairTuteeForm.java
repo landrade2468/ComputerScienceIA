@@ -60,6 +60,8 @@ public class PairTuteeForm extends JFrame {
                 int sum = 0;
                 List<String> commonCategories = new ArrayList<>(3);
                 for (Tutor tutor : listOfTutors) {
+                    sum = 0;
+                    commonCategories.clear();
                     if (tuteeGrade.toLowerCase().compareTo(listOfTutees.get(indexOfTutee).getGrade().toLowerCase()) == 0) {
                         sum += 1;
                         commonCategories.add(tuteeGrade);
@@ -74,20 +76,16 @@ public class PairTuteeForm extends JFrame {
                     }
                     tutor.setSum(sum);
                     tutor.setCommonCategories(commonCategories);
-                    sum = 0;
-                    commonCategories.clear();
                 }
-                String tutorName = "";
                 while (!foundPerfectTutor) {
                     for (Tutor tutor : listOfTutors) {
                         int sumOfCategories = tutor.getSum();
                         int max = 0;
-                        if (sumOfCategories > 0) { //Fix max method, so it actually gets the tutor with the most common categories
+                        if (sumOfCategories > 0) {
                             max = sumOfCategories;
-                            tutorName = tutor.getName();
                             tuteeNamePartOfPair = tuteeName;
                             tuteeContactPartOfPair = tuteeEmailAddress;
-                            tutorNamePartOfPair = tutorName;
+                            tutorNamePartOfPair = tutor.getName();
                             tutorContactPartOfPair = tutor.getEmailAddress();
                             commonCategoriesBetweenThePairs = tutor.getCommonCategories();
                         }
@@ -103,7 +101,7 @@ public class PairTuteeForm extends JFrame {
                         listOfTutees.remove(indexOfTutee);
                 }
                 for (int i = 0; i < listOfTutors.size(); i++) {
-                    if (tutorName.compareTo(listOfTutors.get(i).getName()) == 0) {
+                    if (tutorNamePartOfPair.compareTo(listOfTutors.get(i).getName()) == 0) {
                         listOfTutors.remove(i);
                     }
                 }
