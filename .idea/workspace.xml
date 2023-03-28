@@ -31,7 +31,14 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TutoringProgramForm">
+    <configuration name="PairTuteeForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PairTuteeForm" />
+      <module name="ComputerScienceIA" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TutoringProgramForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TutoringProgramForm" />
       <module name="ComputerScienceIA" />
@@ -42,6 +49,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TutoringProgramForm" />
+        <item itemvalue="Application.PairTuteeForm" />
       </list>
     </recent_temporary>
   </component>
@@ -56,13 +64,24 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/TutoringProgram/src/PairTuteeForm.java</url>
-          <line>80</line>
-          <option name="timeStamp" value="1" />
+          <line>54</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
