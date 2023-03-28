@@ -8,10 +8,15 @@ public class PairTuteeForm extends JFrame {
     private JPanel panel;
     private JTextField tuteeBeingPaired;
     private JButton pairTuteeButton;
+    private JTextField tuteeTextField;
+    private JTextField tutorTextField;
+    private JTextField commonCategoriesTextField;
     private JTextField tutoringPair;
     private static List<Tutor> listOfTutors;
     private static List<Tutee> listOfTutees;
-    private String pair;
+    private String tuteePartOfPair;
+    private String tutorPartOfPair;
+    private String commonCategoriesBetweenThePairs;
 
     public PairTuteeForm (List<Tutor> listOfTutors, List<Tutee> listOfTutees) {
         PairTuteeForm.listOfTutors = listOfTutors;
@@ -75,12 +80,16 @@ public class PairTuteeForm extends JFrame {
                         if (sumOfCategories > 0) {
                             max = sumOfCategories;
                             tutorName = tutor.getName();
-                            pair = "Tutee Name: " + tuteeName + "\nTutee Contact Information: " + tuteeEmailAddress + "\nTutor Name: " + tutorName + "\nTutor Contact Information: " + tutor.getEmailAddress() + "\nCommon Categories: " + tutor.getCommonCategories();
+                            tuteePartOfPair = "Tutee Name: " + tuteeName + "Tutee Contact Information: " + tuteeEmailAddress;
+                            tutorPartOfPair = "Tutor Name: " + tutorName + "Tutor Contact Information: " + tutor.getEmailAddress();
+                            commonCategoriesBetweenThePairs = "Common Categories: " + tutor.getCommonCategories();
                         }
                     }
                     foundPerfectTutor = true;
                 }
-                tutoringPair.setText(pair);
+                tuteeTextField.setText(tuteePartOfPair);
+                tutorTextField.setText(tutorPartOfPair);
+                commonCategoriesTextField.setText(commonCategoriesBetweenThePairs);
                 if (tuteeName.compareTo(listOfTutees.get(indexOfTutee).getName()) == 0) {
                         listOfTutees.remove(indexOfTutee);
                 }
