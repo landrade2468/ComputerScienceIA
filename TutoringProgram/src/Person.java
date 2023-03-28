@@ -1,13 +1,13 @@
 public class Person {
     private String name;
-    private String schoolEmailAddress;
+    private String emailAddress;
     private String grade;
     private String subject;
     private String quarterForTutoring;
 
-    public Person(String name, String schoolEmailAddress, String grade, String subject, String quarterForTutoring) {
+    public Person(String name, String emailAddress, String grade, String subject, String quarterForTutoring) {
         this.name = name;
-        this.schoolEmailAddress = schoolEmailAddress;
+        this.emailAddress = emailAddress;
         this.grade = grade;
         this.subject = subject;
         this.quarterForTutoring = quarterForTutoring;
@@ -17,8 +17,8 @@ public class Person {
         return name;
     }
 
-    public String getSchoolEmailAddress() {
-        return schoolEmailAddress;
+    public String getEmailAddress() {
+        return emailAddress;
     }
 
     public String getGrade() {

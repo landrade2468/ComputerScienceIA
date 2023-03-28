@@ -8,7 +8,6 @@ public class PairTuteeForm extends JFrame {
     private JPanel panel;
     private JTextField tuteeBeingPaired;
     private JButton pairTuteeButton;
-    private JButton displayPair;
     private JTextField tutoringPair;
     private static List<Tutor> listOfTutors;
     private static List<Tutee> listOfTutees;
@@ -18,7 +17,7 @@ public class PairTuteeForm extends JFrame {
         PairTuteeForm.listOfTutors = listOfTutors;
         PairTuteeForm.listOfTutees = listOfTutees;
         setContentPane(panel);
-        setSize(800, 800);
+        setSize(600, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         pairTuteeButton.addActionListener(new ActionListener() {
@@ -39,7 +38,7 @@ public class PairTuteeForm extends JFrame {
                     for (Tutee tutee : listOfTutees) {
                         int compareTutees = tuteeName.compareTo(tutee.getName());
                         if (compareTutees == 0) {
-                            tuteeEmailAddress = tutee.getSchoolEmailAddress();
+                            tuteeEmailAddress = tutee.getEmailAddress();
                             tuteeGrade = tutee.getGrade();
                             tuteeSubject = tutee.getSubject();
                             tuteeQuarter = tutee.getQuarterForTutoring();
@@ -74,11 +73,12 @@ public class PairTuteeForm extends JFrame {
                         if (sumOfCategories > 0) {
                             max = sumOfCategories;
                             tutorName = tutor.getName();
-                            pair = "Tutee Name: " + tuteeName + "\nTutee Contact Information: " + tuteeEmailAddress + "\nTutor Name: " + tutorName + "\nTutor Contact Information: " + tutor.getSchoolEmailAddress() + "\nCommon Categories: " + tutor.getCommonCategories();
+                            pair = "Tutee Name: " + tuteeName + "\nTutee Contact Information: " + tuteeEmailAddress + "\nTutor Name: " + tutorName + "\nTutor Contact Information: " + tutor.getEmailAddress() + "\nCommon Categories: " + tutor.getCommonCategories();
                         }
                     }
                     foundPerfectTutor = true;
                 }
+                tutoringPair.setText(pair);
                 for (int i = 0; i < listOfTutees.size(); i++) {
                     if (tuteeName.compareTo(listOfTutees.get(i).getName()) == 0) {
                         listOfTutees.remove(i);
@@ -89,18 +89,6 @@ public class PairTuteeForm extends JFrame {
                         listOfTutors.remove(i);
                     }
                 }
-            }
-        });
-
-        displayPair.addActionListener(new ActionListener() {
-            /**
-             * Invoked when an action occurs.
-             *
-             * @param e the event to be processed
-             */
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                tutoringPair.setText(pair);
             }
         });
     }

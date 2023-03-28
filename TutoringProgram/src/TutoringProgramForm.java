@@ -22,7 +22,7 @@ public class TutoringProgramForm extends JFrame {
         listOfTutors = new ArrayList<>();
         listOfTutees = new ArrayList<>();
         setContentPane(panel);
-        setSize(800,800);
+        setSize(600,600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         tutorButton.addActionListener(new ActionListener() {
