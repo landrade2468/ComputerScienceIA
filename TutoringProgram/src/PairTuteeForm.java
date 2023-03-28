@@ -9,6 +9,7 @@ public class PairTuteeForm extends JFrame {
     private JTextField tuteeBeingPaired;
     private JButton pairTuteeButton;
     private JButton displayPair;
+    private JTextField tutoringPair;
     private static List<Tutor> listOfTutors;
     private static List<Tutee> listOfTutees;
     private String pair;
@@ -35,18 +36,18 @@ public class PairTuteeForm extends JFrame {
                 String tuteeQuarter = "";
                 boolean notFound = true;
                 while (notFound) {
-                    for (Tutee listOfTutee : listOfTutees) {
-                        int compareTutees = tuteeName.compareTo(listOfTutee.getName());
+                    for (Tutee tutee : listOfTutees) {
+                        int compareTutees = tuteeName.compareTo(tutee.getName());
                         if (compareTutees == 0) {
-                            tuteeEmailAddress = listOfTutee.getSchoolEmailAddress();
-                            tuteeGrade = listOfTutee.getGrade();
-                            tuteeSubject = listOfTutee.getSubject();
-                            tuteeQuarter = listOfTutee.getQuarterForTutoring();
+                            tuteeEmailAddress = tutee.getSchoolEmailAddress();
+                            tuteeGrade = tutee.getGrade();
+                            tuteeSubject = tutee.getSubject();
+                            tuteeQuarter = tutee.getQuarterForTutoring();
                             notFound = false;
                         }
                     }
                 }
-                boolean foundPerfectTutor = false; //Remember to set findPerfectTutor to true after finding the best tutor
+                boolean foundPerfectTutor = false;
                 int sum = 0;
                 List<String> commonCategories = new ArrayList<>();
                 for (int i = 0; i < listOfTutors.size(); i++) {
@@ -67,13 +68,13 @@ public class PairTuteeForm extends JFrame {
                 }
                 String tutorName = "";
                 while (!foundPerfectTutor) {
-                    for (int i = 0; i < listOfTutors.size(); i++) {
-                        int sumOfCategories = listOfTutors.get(i).getSum();
+                    for (Tutor tutor : listOfTutors) {
+                        int sumOfCategories = tutor.getSum();
                         int max = 0;
                         if (sumOfCategories > 0) {
                             max = sumOfCategories;
-                            tutorName = listOfTutors.get(i).getName();
-                            String pair = "Tutee Name: " + tuteeName + "\nTutee Contact Information: " + tuteeEmailAddress + "\nTutor Name: " + tutorName + "\nTutor Contact Information: " + listOfTutors.get(i).getSchoolEmailAddress() + "\nCommon Categories: " + listOfTutors.get(i).getCommonCategories();
+                            tutorName = tutor.getName();
+                            pair = "Tutee Name: " + tuteeName + "\nTutee Contact Information: " + tuteeEmailAddress + "\nTutor Name: " + tutorName + "\nTutor Contact Information: " + tutor.getSchoolEmailAddress() + "\nCommon Categories: " + tutor.getCommonCategories();
                         }
                     }
                     foundPerfectTutor = true;
@@ -90,10 +91,16 @@ public class PairTuteeForm extends JFrame {
                 }
             }
         });
+
         displayPair.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             *
+             * @param e the event to be processed
+             */
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO Find a way to display all of said information on the GUI
+                tutoringPair.setText(pair);
             }
         });
     }
