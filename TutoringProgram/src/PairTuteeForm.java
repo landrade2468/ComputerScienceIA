@@ -58,8 +58,8 @@ public class PairTuteeForm extends JFrame {
                 }
                 boolean foundPerfectTutor = false;
                 int sum = 0;
-                List<String> commonCategories = new ArrayList<String>(3);
-                for (int i = 0; i < listOfTutors.size(); i++) {
+                List<String> commonCategories = new ArrayList<>(3);
+                for (Tutor tutor : listOfTutors) {
                     if (tuteeGrade.toLowerCase().compareTo(listOfTutees.get(indexOfTutee).getGrade().toLowerCase()) == 0) {
                         sum += 1;
                         commonCategories.add(tuteeGrade);
@@ -72,8 +72,10 @@ public class PairTuteeForm extends JFrame {
                         sum += 1;
                         commonCategories.add(tuteeQuarter);
                     }
-                    listOfTutors.get(i).setSum(sum);
-                    listOfTutors.get(i).setCommonCategories(commonCategories);
+                    tutor.setSum(sum);
+                    tutor.setCommonCategories(commonCategories);
+                    sum = 0;
+                    commonCategories.clear();
                 }
                 String tutorName = "";
                 while (!foundPerfectTutor) {
