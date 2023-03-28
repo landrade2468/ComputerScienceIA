@@ -8,7 +8,7 @@ public class Tutor extends Person {
     public Tutor(String name, String schoolEmailAddress, String grade, String subject, String quarterForTutoring, int sum, List<String> commonCategories) {
         super(name, schoolEmailAddress, grade, subject, quarterForTutoring);
         this.sum = sum;
-        commonCategories = new ArrayList<String>(3);
+        commonCategories = new ArrayList<>(3);
         this.commonCategories = commonCategories;
     }
 

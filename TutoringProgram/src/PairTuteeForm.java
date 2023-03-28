@@ -8,14 +8,17 @@ public class PairTuteeForm extends JFrame {
     private JPanel panel;
     private JTextField tuteeBeingPaired;
     private JButton pairTuteeButton;
-    private JTextField tuteeTextField;
-    private JTextField tutorTextField;
+    private JTextField tuteeNameTextField;
+    private JTextField tutorNameTextField;
     private JTextField commonCategoriesTextField;
-    private JTextField tutoringPair;
+    private JTextField tuteeContactTextField;
+    private JTextField tutorContactTextField;
     private static List<Tutor> listOfTutors;
     private static List<Tutee> listOfTutees;
-    private String tuteePartOfPair;
-    private String tutorPartOfPair;
+    private String tuteeNamePartOfPair;
+    private String tuteeContactPartOfPair;
+    private String tutorNamePartOfPair;
+    private String tutorContactPartOfPair;
     private String commonCategoriesBetweenThePairs;
 
     public PairTuteeForm (List<Tutor> listOfTutors, List<Tutee> listOfTutees) {
@@ -77,18 +80,22 @@ public class PairTuteeForm extends JFrame {
                     for (Tutor tutor : listOfTutors) {
                         int sumOfCategories = tutor.getSum();
                         int max = 0;
-                        if (sumOfCategories > 0) {
+                        if (sumOfCategories > 0) { //Fix max method, so it actually gets the tutor with the most common categories
                             max = sumOfCategories;
                             tutorName = tutor.getName();
-                            tuteePartOfPair = "Tutee Name: " + tuteeName + "Tutee Contact Information: " + tuteeEmailAddress;
-                            tutorPartOfPair = "Tutor Name: " + tutorName + "Tutor Contact Information: " + tutor.getEmailAddress();
-                            commonCategoriesBetweenThePairs = "Common Categories: " + tutor.getCommonCategories();
+                            tuteeNamePartOfPair = "Tutee Name: " + tuteeName;
+                            tuteeContactPartOfPair = "Tutee Contact Information: " + tuteeEmailAddress;
+                            tutorNamePartOfPair = "Tutor Name: " + tutorName;
+                            tutorContactPartOfPair = "Tutor Contact Information: " + tutor.getEmailAddress();
+                            commonCategoriesBetweenThePairs = "Common Categories: " + tutor.getCommonCategories(); //Fix so it only prints the common category once
                         }
                     }
                     foundPerfectTutor = true;
                 }
-                tuteeTextField.setText(tuteePartOfPair);
-                tutorTextField.setText(tutorPartOfPair);
+                tuteeNameTextField.setText(tuteeNamePartOfPair);
+                tuteeContactTextField.setText(tuteeContactPartOfPair);
+                tutorNameTextField.setText(tutorNamePartOfPair);
+                tutorContactTextField.setText(tutorContactPartOfPair);
                 commonCategoriesTextField.setText(commonCategoriesBetweenThePairs);
                 if (tuteeName.compareTo(listOfTutees.get(indexOfTutee).getName()) == 0) {
                         listOfTutees.remove(indexOfTutee);
