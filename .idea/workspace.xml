@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd80911e-365e-4645-8236-a7bf87597a33" name="Changes" comment="" />
+    <list default="true" id="cd80911e-365e-4645-8236-a7bf87597a33" name="Changes" comment="Initial Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TutoringProgram/src/PairTuteeForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/TutoringProgram/src/PairTuteeForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TutoringProgram/src/PairTuteeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/TutoringProgram/src/PairTuteeForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/PairTuteeForm 1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/PairTuteeForm$1 1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/PairTuteeForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/PairTuteeForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/PairTuteeForm$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/PairTuteeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/PairTuteeForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/AbstractLayout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/DimensionInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/GridConstraints.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/GridLayoutManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/HorizontalInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/LayoutState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/Spacer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/SupportCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/VerticalInfo.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,16 +41,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/andra/Downloads",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
   <component name="RunManager" selected="Application.TutoringProgramForm">
     <configuration name="PairTuteeForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PairTuteeForm" />
@@ -74,6 +89,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -42,35 +42,31 @@ public class PairTuteeForm extends JFrame {
                 String tuteeSubject = "";
                 String tuteeQuarter = "";
                 boolean notFound = true;
-                int indexOfTutee = 0;
                 while (notFound) {
-                    for (int i = 0; i < listOfTutees.size(); i++) {
-                        int compareTutees = tuteeName.compareTo(listOfTutees.get(i).getName());
+                    for (Tutee tutee : listOfTutees) {
+                        int compareTutees = tuteeName.compareTo(tutee.getName());
                         if (compareTutees == 0) {
-                            tuteeEmailAddress = listOfTutees.get(i).getEmailAddress();
-                            tuteeGrade = listOfTutees.get(i).getGrade();
-                            tuteeSubject = listOfTutees.get(i).getSubject();
-                            tuteeQuarter = listOfTutees.get(i).getQuarterForTutoring();
-                            indexOfTutee = i;
+                            tuteeEmailAddress = tutee.getEmailAddress();
+                            tuteeGrade = tutee.getGrade();
+                            tuteeSubject = tutee.getSubject();
+                            tuteeQuarter = tutee.getQuarterForTutoring();
                             notFound = false;
                         }
                     }
                 }
                 boolean foundPerfectTutor = false;
-                int sum = 0;
-                List<String> commonCategories = new ArrayList<>(3);
                 for (Tutor tutor : listOfTutors) {
-                    sum = 0;
-                    commonCategories.clear();
-                    if (tuteeGrade.toLowerCase().compareTo(listOfTutees.get(indexOfTutee).getGrade().toLowerCase()) == 0) {
+                    int sum = 0;
+                    List<String> commonCategories = new ArrayList<>(3);
+                    if (tuteeGrade.toLowerCase().compareTo(tutor.getGrade().toLowerCase()) == 0) {
                         sum += 1;
                         commonCategories.add(tuteeGrade);
                     }
-                    if (tuteeSubject.toLowerCase().compareTo(listOfTutees.get(indexOfTutee).getSubject().toLowerCase()) == 0) {
+                    if (tuteeSubject.toLowerCase().compareTo(tutor.getSubject().toLowerCase()) == 0) {
                         sum += 1;
                         commonCategories.add(tuteeSubject);
                     }
-                    if (tuteeQuarter.toLowerCase().compareTo(listOfTutees.get(indexOfTutee).getQuarterForTutoring().toLowerCase()) == 0) {
+                    if (tuteeQuarter.equals(tutor.getQuarterForTutoring())) {
                         sum += 1;
                         commonCategories.add(tuteeQuarter);
                     }
@@ -78,10 +74,10 @@ public class PairTuteeForm extends JFrame {
                     tutor.setCommonCategories(commonCategories);
                 }
                 while (!foundPerfectTutor) {
+                    int max = 0;
                     for (Tutor tutor : listOfTutors) {
                         int sumOfCategories = tutor.getSum();
-                        int max = 0;
-                        if (sumOfCategories > 0) {
+                        if (sumOfCategories > max) {
                             max = sumOfCategories;
                             tuteeNamePartOfPair = tuteeName;
                             tuteeContactPartOfPair = tuteeEmailAddress;
@@ -97,8 +93,10 @@ public class PairTuteeForm extends JFrame {
                 tutorNameTextField.setText(tutorNamePartOfPair);
                 tutorContactTextField.setText(tutorContactPartOfPair);
                 commonCategoriesTextField.setText(commonCategoriesBetweenThePairs);
-                if (tuteeName.compareTo(listOfTutees.get(indexOfTutee).getName()) == 0) {
-                        listOfTutees.remove(indexOfTutee);
+                for (int i = 0; i < listOfTutees.size(); i++) {
+                    if (tuteeName.compareTo(listOfTutees.get(i).getName()) == 0) {
+                        listOfTutees.remove(i);
+                    }
                 }
                 for (int i = 0; i < listOfTutors.size(); i++) {
                     if (tutorNamePartOfPair.compareTo(listOfTutors.get(i).getName()) == 0) {
