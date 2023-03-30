@@ -58,7 +58,7 @@ public class PairTuteeForm extends JFrame {
                 for (Tutor tutor : listOfTutors) {
                     int sum = 0;
                     List<String> commonCategories = new ArrayList<>(3);
-                    if (tuteeGrade.toLowerCase().compareTo(tutor.getGrade().toLowerCase()) == 0) {
+                    if (tuteeGrade.equals(tutor.getGrade())) {
                         sum += 1;
                         commonCategories.add(tuteeGrade);
                     }

@@ -6,24 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cd80911e-365e-4645-8236-a7bf87597a33" name="Changes" comment="Initial Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TutoringProgram/src/PairTuteeForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/TutoringProgram/src/PairTuteeForm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TutoringProgram/src/PairTuteeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/TutoringProgram/src/PairTuteeForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/PairTuteeForm 1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/PairTuteeForm$1 1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/PairTuteeForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/PairTuteeForm$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/PairTuteeForm$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/PairTuteeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/PairTuteeForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/AbstractLayout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/DimensionInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/GridConstraints.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/GridLayoutManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/HorizontalInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/LayoutState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/Spacer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/SupportCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/com/intellij/uiDesigner/core/VerticalInfo.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +60,14 @@
       <option name="presentableId" value="Default" />
       <updated>1680023988744</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1680052504728</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680052504728</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -90,6 +81,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
