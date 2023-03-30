@@ -4,6 +4,10 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A GUI that, after being provided the name of the tutee being paired, finds the best tutor and prints out the tutee's name and contact info, the tutor's name and contact info, and the common categories
+ * Afterwards, the paired tutor and tutee are deleted from their respective lists
+ */
 public class PairTuteeForm extends JFrame {
     private JPanel panel;
     private JTextField tuteeBeingPaired;
@@ -21,6 +25,11 @@ public class PairTuteeForm extends JFrame {
     private String tutorContactPartOfPair;
     private String commonCategoriesBetweenThePairs;
 
+    /**
+     * Creates an instance of the PairTuteeForm class
+     * @param listOfTutors the list of all the tutors that have been inputted
+     * @param listOfTutees the list of all the tutees that have been inputted
+     */
     public PairTuteeForm (List<Tutor> listOfTutors, List<Tutee> listOfTutees) {
         PairTuteeForm.listOfTutors = listOfTutors;
         PairTuteeForm.listOfTutees = listOfTutees;
@@ -31,7 +40,6 @@ public class PairTuteeForm extends JFrame {
         pairTuteeButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
-             *
              * @param e the event to be processed
              */
             @Override
@@ -42,6 +50,9 @@ public class PairTuteeForm extends JFrame {
                 String tuteeSubject = "";
                 String tuteeQuarter = "";
                 boolean notFound = true;
+                /**
+                 * Finds the tutee in the list of tutees that is being paired and retrieves all of that tutee's information
+                 */
                 while (notFound) {
                     for (Tutee tutee : listOfTutees) {
                         int compareTutees = tuteeName.compareTo(tutee.getName());
@@ -54,6 +65,9 @@ public class PairTuteeForm extends JFrame {
                         }
                     }
                 }
+                /**
+                 * Sets the sum and common categories between each tutor in the list and the tutee being paired
+                 */
                 boolean foundPerfectTutor = false;
                 for (Tutor tutor : listOfTutors) {
                     int sum = 0;
@@ -73,6 +87,9 @@ public class PairTuteeForm extends JFrame {
                     tutor.setSum(sum);
                     tutor.setCommonCategories(commonCategories);
                 }
+                /**
+                 * Finds the perfect tutor by comparing the sums and stores the tutee's name and contact info, the tutor's name and contact info, and the common categories in variables, which are later set to their respective text fields on the GUI
+                 */
                 while (!foundPerfectTutor) {
                     int max = 0;
                     for (Tutor tutor : listOfTutors) {
@@ -93,11 +110,17 @@ public class PairTuteeForm extends JFrame {
                 tutorNameTextField.setText(tutorNamePartOfPair);
                 tutorContactTextField.setText(tutorContactPartOfPair);
                 commonCategoriesTextField.setText(commonCategoriesBetweenThePairs);
+                /**
+                 * Finds the tutee that has been paired and removes that tutee from the list of tutees
+                 */
                 for (int i = 0; i < listOfTutees.size(); i++) {
                     if (tuteeName.compareTo(listOfTutees.get(i).getName()) == 0) {
                         listOfTutees.remove(i);
                     }
                 }
+                /**
+                 * Finds the tutor that has been paired and removes that tutor from the list of tutors
+                 */
                 for (int i = 0; i < listOfTutors.size(); i++) {
                     if (tutorNamePartOfPair.compareTo(listOfTutors.get(i).getName()) == 0) {
                         listOfTutors.remove(i);
