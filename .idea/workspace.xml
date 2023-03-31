@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd80911e-365e-4645-8236-a7bf87597a33" name="Changes" comment="Initial Commit" />
+    <list default="true" id="cd80911e-365e-4645-8236-a7bf87597a33" name="Changes" comment="Initial Commit">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ComputerScienceIA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutoringProgram/TutoringProgram.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TutoringProgram/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/TutoringProgram/com/intellij/uiDesigner/core/AbstractLayout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/TutoringProgram/com/intellij/uiDesigner/core/DimensionInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/TutoringProgram/com/intellij/uiDesigner/core/GridConstraints.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/TutoringProgram/com/intellij/uiDesigner/core/GridLayoutManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/TutoringProgram/com/intellij/uiDesigner/core/HorizontalInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/TutoringProgram/com/intellij/uiDesigner/core/LayoutState.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/TutoringProgram/com/intellij/uiDesigner/core/Spacer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/TutoringProgram/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/TutoringProgram/com/intellij/uiDesigner/core/SupportCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/TutoringProgram/com/intellij/uiDesigner/core/Util.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/TutoringProgram/com/intellij/uiDesigner/core/VerticalInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/PairTuteeForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/PairTuteeForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/PairTuteeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/PairTuteeForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/Tutee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/Tutee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/Tutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/Tutor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/TutoringProgramForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/TutoringProgramForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/TutoringProgramForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/TutoringProgramForm$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/TutoringProgramForm$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/TutoringProgramForm$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerScienceIA/TutoringProgramForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerScienceIA/TutoringProgramForm.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +39,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -21,15 +56,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
   <component name="RunManager" selected="Application.TutoringProgramForm">
     <configuration name="PairTuteeForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PairTuteeForm" />
@@ -81,6 +113,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
